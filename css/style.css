@@ -223,3 +223,146 @@ html { scroll-padding-top: 92px; }
     transition-duration: .01ms !important;
   }
 }
+
+
+/* Landing page redesign */
+body.home-page { --night:#101113; --night-soft:#17191c; --chalk:#f1f0eb; --signal:#e34b3e; background:var(--night); color:var(--chalk); font-family:'DM Sans',sans-serif; }
+.home-page .site-header { height:76px; padding:0 7%; background:rgba(16,17,19,.92); border-bottom:1px solid rgba(255,255,255,.1); color:var(--chalk); }
+.home-page .wordmark { color:var(--chalk); font-size:15px; letter-spacing:-.4px; }
+.home-page .wordmark span { color:var(--signal); }
+.home-page .navigation { gap:34px; }
+.home-page .navigation a { color:rgba(241,240,235,.68); font-size:11px; }
+.home-page .navigation a:hover,.home-page .navigation a:focus { color:white; }
+.home-page .navigation .nav-cta { color:white; border:1px solid rgba(255,255,255,.35); padding:10px 15px; }
+.home-page .menu-toggle { color:var(--chalk); }
+.landing-hero { min-height:calc(100svh - 76px); position:relative; display:flex; align-items:center; padding:100px 10% 130px; overflow:hidden; background:#17191c; }
+.landing-hero-image { position:absolute; inset:0; background:url('../assets/images/driver.png') center 38%/cover no-repeat; opacity:.64; filter:grayscale(35%); transform:scale(1.015); }
+.landing-hero-shade { position:absolute; inset:0; background:linear-gradient(90deg,rgba(10,11,13,.96) 0%,rgba(10,11,13,.78) 42%,rgba(10,11,13,.12) 100%),linear-gradient(0deg,rgba(10,11,13,.7),transparent 35%); }
+.landing-hero-content { position:relative; z-index:2; max-width:760px; }
+.landing-kicker,.landing-section-label { color:rgba(241,240,235,.58); font-size:9px; font-weight:700; letter-spacing:2px; text-transform:uppercase; }
+.landing-kicker span { display:inline-block; width:23px; height:1px; background:var(--signal); margin:0 10px 3px 0; }
+.landing-hero h1 { margin-top:30px; font:800 clamp(68px,10vw,142px)/.91 'Manrope',sans-serif; letter-spacing:-.085em; color:#f7f6f2; }
+.landing-hero h1 em,.contact-main h2 em { color:var(--signal); font-style:normal; }
+.landing-lead { max-width:435px; margin-top:32px; color:rgba(241,240,235,.7); font-size:14px; line-height:1.9; }
+.landing-actions { display:flex; align-items:center; gap:30px; margin-top:35px; flex-wrap:wrap; }
+.landing-button { display:inline-flex; align-items:center; gap:38px; padding:16px 19px; background:var(--signal); color:white; font-size:10px; font-weight:700; transition:transform .2s,background .2s; }
+.landing-button:hover { transform:translateY(-3px); background:#c93b31; }
+.landing-button span,.inline-link span { font-size:16px; }
+.landing-quiet-link { color:white; font-size:11px; border-bottom:1px solid rgba(255,255,255,.4); padding-bottom:8px; }
+.hero-index { position:absolute; z-index:2; bottom:35px; left:7%; right:7%; display:flex; justify-content:space-between; color:rgba(241,240,235,.48); font-size:8px; letter-spacing:1.8px; }
+.hero-index span:first-child { color:var(--signal); }
+.hero-scroll { position:absolute; right:7%; top:50%; writing-mode:vertical-rl; color:rgba(241,240,235,.65); font-size:8px; letter-spacing:2px; }
+.hero-scroll span { color:var(--signal); margin-top:12px; font-size:16px; }
+.landing-intro,.landing-racing,.landing-results,.landing-direction,.landing-partners,.landing-contact { padding:110px 10%; }
+.landing-intro { background:var(--chalk); color:var(--night); }
+.landing-section-label { color:#888983; }
+.landing-section-label span { color:var(--signal); margin-right:14px; }
+.intro-main { display:grid; grid-template-columns:1.1fr .9fr; gap:10%; align-items:start; margin-top:52px; }
+.intro-main h2,.racing-heading h2,.results-heading h2,.direction-copy h2,.partners-content h2 { font:700 clamp(38px,5.5vw,72px)/1.04 'Manrope',sans-serif; letter-spacing:-.065em; }
+.intro-main h2 span,.racing-heading h2 span,.results-heading h2 span,.direction-copy h2 span,.partners-content h2 span { color:var(--signal); }
+.intro-copy { max-width:470px; padding-top:5px; }
+.intro-copy p,.racing-heading > p,.results-heading > p,.direction-copy > p,.partners-content > div > p { color:#777972; font-size:13px; line-height:1.95; }
+.intro-copy .intro-lead { color:#252623; font-size:17px; line-height:1.7; margin-bottom:17px; }
+.inline-link { display:inline-flex; gap:24px; align-items:center; margin-top:27px; padding-bottom:8px; border-bottom:1px solid #c7c6bf; font-size:11px; font-weight:700; }
+.inline-link:hover { color:var(--signal); border-color:var(--signal); }
+.intro-meta { display:flex; justify-content:space-between; gap:15px; border-top:1px solid #d7d6cf; margin-top:90px; padding-top:17px; color:#8c8d86; font-size:8px; letter-spacing:1.5px; }
+.landing-racing { background:var(--night-soft); }
+.racing-heading,.results-heading { display:flex; justify-content:space-between; align-items:end; gap:35px; margin:48px 0 45px; }
+.racing-heading h2,.results-heading h2 { color:var(--chalk); }
+.racing-heading > p,.results-heading > p { max-width:280px; color:rgba(241,240,235,.55); }
+.discipline-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+.discipline-card { min-height:510px; position:relative; overflow:hidden; background:#25272a; }
+.discipline-card img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform .6s; filter:saturate(.7); }
+.discipline-card:hover img { transform:scale(1.04); }
+.discipline-overlay { position:absolute; inset:0; background:linear-gradient(0deg,rgba(8,9,10,.95),rgba(8,9,10,.05) 75%); }
+.discipline-number { position:absolute; top:24px; left:25px; color:white; font-size:8px; letter-spacing:1.8px; }
+.discipline-info { position:absolute; left:30px; right:30px; bottom:30px; }
+.discipline-info h3 { font:700 35px 'Manrope'; letter-spacing:-1.5px; color:white; }
+.discipline-info p { max-width:400px; margin-top:10px; color:rgba(255,255,255,.7); font-size:12px; line-height:1.8; }
+.discipline-info a { display:inline-flex; gap:25px; margin-top:22px; color:white; font-size:10px; font-weight:700; border-bottom:1px solid rgba(255,255,255,.45); padding-bottom:8px; }
+.discipline-info a:hover { color:#ff766b; }
+.landing-results { background:#111214; }
+.landing-stats { display:grid; grid-template-columns:repeat(4,1fr); margin:48px 0 32px; border-top:1px solid rgba(255,255,255,.16); border-bottom:1px solid rgba(255,255,255,.16); }
+.landing-stats div { padding:25px 12px 27px 0; display:flex; flex-direction:column; gap:10px; }
+.landing-stats strong { font:700 clamp(30px,4vw,54px) 'Manrope'; letter-spacing:-2px; color:white; }
+.landing-stats span { color:rgba(241,240,235,.42); font-size:8px; letter-spacing:1.5px; }
+.series-line { display:grid; grid-template-columns:1.1fr .7fr 1.4fr auto; align-items:center; gap:18px; padding:19px 0; border-bottom:1px solid rgba(255,255,255,.12); color:rgba(241,240,235,.6); font-size:10px; }
+.series-line > span:first-child { color:white; font-size:9px; letter-spacing:1.2px; }
+.series-line strong { color:white; font:600 13px 'Manrope'; }
+.series-line a { color:var(--signal); font-weight:700; }
+.landing-footnote { margin-top:20px; color:rgba(241,240,235,.35); font-size:9px; line-height:1.7; }
+.landing-direction { display:grid; grid-template-columns:1fr 1fr; gap:10%; align-items:center; background:var(--chalk); color:var(--night); }
+.direction-photo { position:relative; min-height:570px; background:#25272a; }
+.direction-photo img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.direction-photo span { position:absolute; bottom:20px; left:20px; color:white; font-size:8px; letter-spacing:2px; }
+.direction-copy h2 { margin-top:42px; }
+.direction-copy > p { margin-top:22px; max-width:480px; }
+.target-list { margin-top:28px; border-top:1px solid #d6d5ce; }
+.target-list div { display:grid; grid-template-columns:28px 1fr; gap:4px 12px; padding:15px 0; border-bottom:1px solid #d6d5ce; }
+.target-list div > span { grid-row:span 2; color:var(--signal); font-size:9px; }
+.target-list strong { font:600 12px 'Manrope'; }
+.target-list small { color:#85867e; font-size:9px; }
+.landing-partners { background:#202226; }
+.partners-content { display:grid; grid-template-columns:1fr 1fr; gap:10%; align-items:center; margin-top:48px; }
+.partners-content h2 { color:white; }
+.partners-content > div > p { color:rgba(241,240,235,.58); }
+.landing-button-light { margin-top:25px; background:var(--chalk); color:var(--night); }
+.landing-button-light:hover { background:white; }
+.partner-details { color:white; border-color:rgba(255,255,255,.25); margin-top:55px; }
+.landing-contact { background:#111214; display:grid; grid-template-columns:.55fr 1.45fr; gap:8%; }
+.contact-main { padding-left:4%; }
+.contact-main h2 { margin-top:28px; color:white; font:800 clamp(58px,8vw,100px)/.95 'Manrope'; letter-spacing:-.08em; }
+.contact-main > p:not(.landing-kicker) { margin-top:22px; color:rgba(241,240,235,.55); font-size:12px; }
+.contact-email { display:flex; justify-content:space-between; gap:20px; max-width:560px; margin-top:42px; padding-bottom:15px; border-bottom:1px solid rgba(255,255,255,.3); color:white; font:600 clamp(13px,2vw,18px) 'Manrope'; overflow-wrap:anywhere; }
+.contact-email span { color:var(--signal); }
+.contact-social { display:flex; gap:28px; margin-top:22px; }
+.contact-social a { color:rgba(241,240,235,.55); font-size:10px; }
+.contact-social a:hover { color:white; }
+.landing-footer { display:flex; justify-content:space-between; align-items:center; gap:18px; padding:26px 7%; background:#0b0c0d; border-top:1px solid rgba(255,255,255,.1); }
+.landing-footer p,.landing-footer > a:last-child { color:rgba(241,240,235,.4); font-size:9px; }
+.landing-footer > a:last-child:hover { color:white; }
+.home-page .skip-link { background:var(--signal); color:white; }
+@media(max-width:900px) {
+ .home-page .site-header { padding:0 6%; }
+ .home-page .navigation { gap:19px; }
+ .landing-hero { padding:90px 7% 120px; }
+ .landing-hero-shade { background:linear-gradient(90deg,rgba(10,11,13,.94),rgba(10,11,13,.48)),linear-gradient(0deg,rgba(10,11,13,.65),transparent 45%); }
+ .landing-intro,.landing-racing,.landing-results,.landing-direction,.landing-partners,.landing-contact { padding:85px 7%; }
+ .intro-main,.landing-direction { grid-template-columns:1fr; gap:35px; }
+ .intro-meta { margin-top:55px; }
+ .direction-photo { min-height:430px; }
+ .landing-contact { grid-template-columns:1fr; gap:38px; }
+ .contact-main { padding-left:0; }
+}
+@media(max-width:650px) {
+ .home-page .site-header { height:68px; }
+ .home-page .navigation { top:68px; left:0; right:0; padding:22px 7%; background:#151619; border-color:rgba(255,255,255,.12); }
+ .home-page .navigation a { font-size:12px; }
+ .landing-hero { min-height:calc(100svh - 68px); padding:75px 7% 115px; }
+ .landing-hero-image { background-position:58% center; }
+ .landing-hero h1 { font-size:clamp(64px,16vw,100px); }
+ .landing-lead { max-width:350px; font-size:13px; }
+ .hero-scroll { display:none; }
+ .hero-index { left:7%; right:7%; bottom:25px; font-size:7px; }
+ .landing-intro,.landing-racing,.landing-results,.landing-direction,.landing-partners,.landing-contact { padding:72px 7%; }
+ .intro-main { margin-top:35px; }
+ .intro-main h2,.racing-heading h2,.results-heading h2,.direction-copy h2,.partners-content h2 { font-size:clamp(38px,10vw,58px); }
+ .intro-meta { flex-direction:column; gap:10px; margin-top:42px; }
+ .racing-heading,.results-heading { display:block; margin:35px 0; }
+ .racing-heading > p,.results-heading > p { margin-top:17px; }
+ .discipline-grid { grid-template-columns:1fr; }
+ .discipline-card { min-height:430px; }
+ .landing-stats { grid-template-columns:1fr 1fr; }
+ .landing-stats div { padding:19px 5px 19px 0; }
+ .series-line { grid-template-columns:1fr 1fr; gap:8px 12px; }
+ .series-line > span:nth-child(3) { grid-column:1; }
+ .series-line a { grid-column:2; grid-row:2; justify-self:end; }
+ .direction-photo { min-height:340px; }
+ .partners-content { grid-template-columns:1fr; gap:25px; margin-top:35px; }
+ .contact-main h2 { font-size:clamp(58px,14vw,82px); }
+ .contact-email { font-size:13px; }
+ .landing-footer { flex-direction:column; align-items:flex-start; padding:25px 7%; }
+}
+@media(prefers-reduced-motion:reduce) {
+ .landing-hero-image,.discipline-card img { transition:none; }
+}
