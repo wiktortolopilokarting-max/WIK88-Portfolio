@@ -13,23 +13,24 @@
   <script src="js/main.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <header class="site-header">
     <a class="wordmark" href="index.html">Wiktor Tołopiło<span>.</span></a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-    <nav class="navigation" id="navigation">
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-controls="navigation" aria-expanded="false"><span aria-hidden="true">☰</span></button>
+    <nav class="navigation" id="navigation" aria-label="Primary navigation">
       <a class="" href="index.html">Home</a>
       <a class="" href="about.html">About</a>
       <a class="" href="career.html">Career</a>
       <a class="" href="results.html">Results</a>
       <a class="" href="iracing.html">iRacing</a>
-      <a class="active" href="karting.html">Karting</a>
+      <a class="active" href="karting.html" aria-current="page">Karting</a>
       <a class="" href="goals.html">Goals</a>
       <a class="" href="partners.html">Partners</a>
       <a class="nav-cta" href="contact.html">Contact</a>
     </nav>
   </header>
-<main class="page-main">
+<main id="main-content" class="page-main">
 
 <section class="page-intro">
   <p class="eyebrow">05 — REAL-WORLD MOTORSPORT</p>
