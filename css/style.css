@@ -8,8 +8,9 @@
   --soft: #e9e8e1;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body { background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; -webkit-font-smoothing: antialiased; }
+html { scroll-behavior: smooth; max-width: 100%; overflow-x: clip; }
+body { max-width: 100%; overflow-x: clip; background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; }
 a { color: inherit; text-decoration: none; }
 .site-header { height: 78px; padding: 0 7.5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--line); background: rgba(244,243,239,.94); position: sticky; top: 0; z-index: 20; backdrop-filter: blur(14px); }
 .wordmark { font: 800 16px 'Manrope', sans-serif; letter-spacing: -.7px; }
@@ -19,6 +20,8 @@ a { color: inherit; text-decoration: none; }
 .navigation a:hover { color: var(--red); }
 .navigation .nav-cta { color: var(--ink); border-bottom: 1px solid var(--red); padding: 8px 0; }
 .menu-toggle { display: none; border: 0; background: none; font-size: 24px; color: var(--ink); }
+.hero, .section, footer { min-width: 0; max-width: 100%; }
+.hero-copy, .hero-visual, .about-section > *, .experience-card, .result-card, .goals-section > *, .approach-section > * { min-width: 0; }
 .hero { min-height: 690px; padding: 90px 7.5% 45px; display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 6%; position: relative; }
 .hero-copy { max-width: 610px; padding-bottom: 45px; }
 .eyebrow { color: var(--red); font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 25px; }
@@ -91,7 +94,7 @@ h1, h2, h3 { font-family: 'Manrope', sans-serif; }
 .contact-links { max-width: 540px; margin: 0 auto; border-top: 1px solid #d0cfc7; }
 .contact-links a { display: flex; justify-content: space-between; gap: 20px; padding: 18px 0; border-bottom: 1px solid #d0cfc7; text-align: left; }
 .contact-links span { color: #888981; font-size: 11px; }
-.contact-links strong { font: 600 12px 'Manrope'; }
+.contact-links strong { font: 600 12px 'Manrope'; overflow-wrap: anywhere; }
 .guardian-note { color: #888981; font-size: 10px; margin-top: 32px; }
 footer { padding: 28px 7.5%; display: flex; justify-content: space-between; align-items: center; gap: 18px; }
 footer p, .back-top { color: #8c8c84; font-size: 10px; }
