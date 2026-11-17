@@ -1,279 +1,122 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WIK #88 - Polish sim racing driver portfolio.">
-    <title>WIK #88 | Racing Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wiktor Tołopiło — sim racing and karting driver portfolio.">
+  <meta name="theme-color" content="#f4f3ef">
+  <title>Wiktor Tołopiło — Driver Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-
-<div class="progress-bar" id="progress"></div>
-
-<header class="header">
-    <a href="#home" class="logo">WIK<span>88</span></a>
-
-    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
-
-    <nav id="nav">
-        <a href="#about">ABOUT</a>
-        <a href="#career">CAREER</a>
-        <a href="#results">RESULTS</a>
-        <a href="#karting">KARTING</a>
-        <a href="#goals">GOALS</a>
-        <a href="#contact" class="nav-contact">CONTACT</a>
+  <header class="site-header">
+    <a class="wordmark" href="#home">Wiktor Tołopiło<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="navigation" id="navigation">
+      <a href="#about">About</a>
+      <a href="#racing">Racing</a>
+      <a href="#goals">Goals</a>
+      <a href="#contact" class="nav-cta">Contact</a>
     </nav>
-</header>
-
-<main>
-
-<section class="hero" id="home">
-    <div class="hero-content">
-        <p class="eyebrow">POLISH SIM RACING DRIVER</p>
-        <h1>WIK<span>88</span></h1>
-        <h2>DRIVEN BY SPEED.<br>FOCUSED ON PROGRESS.</h2>
-        <p class="hero-description">
-            A young racing enthusiast from Poland, developing skills
-            in competitive sim racing and real-world karting.
-        </p>
-        <div class="hero-buttons">
-            <a href="#about" class="button primary">DISCOVER MY STORY</a>
-            <a href="#contact" class="button secondary">GET IN TOUCH</a>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> DRIVER PORTFOLIO · POLAND</p>
+        <h1>Wiktor<br><span>Tołopiło.</span></h1>
+        <p class="hero-role">Sim racing &nbsp;·&nbsp; Karting &nbsp;·&nbsp; Motorsport</p>
+        <p class="hero-intro">Developing as a racing driver. Focused on learning, consistency and progress — on and off the track.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#racing">Explore my experience <span>↘</span></a>
+          <a class="text-link" href="#contact">Get in touch <span>↗</span></a>
         </div>
-    </div>
-    <div class="hero-number">88</div>
-    <div class="hero-bottom">WIKTOR TOŁOPIŁO — RACING PORTFOLIO</div>
-</section>
-
-<section class="section" id="about">
-    <p class="eyebrow">01 / ABOUT ME</p>
-    <h2 class="section-title">WHO IS <span>WIK?</span></h2>
-
-    <div class="about-grid">
-        <div class="about-photo">
-            <img src="assets/images/driver.png" alt="WIK racing portrait"
-                 onerror="this.style.display='none'">
-            <div class="photo-placeholder">YOUR PHOTO HERE</div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/images/driver.png" alt="Wiktor — racing portrait" onerror="this.style.display='none'; this.parentElement.classList.add('image-missing')">
+        <div class="visual-caption"><span>01</span><span>ON THE WAY FORWARD</span></div>
+      </div>
+      <div class="hero-bottomline"><span>BASED IN POLAND</span><span>SIM RACING / KARTING</span></div>
+    </section>
+    <section class="section about-section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">01 — ABOUT</p>
+        <h2>Learning the craft.<br><span>Chasing progress.</span></h2>
+      </div>
+      <div class="about-copy">
+        <p class="lead">I'm a young motorsport enthusiast from Poland, developing my skills through sim racing and real-world karting.</p>
+        <p>I focus on racecraft, consistency, car control and understanding the details that make a difference over a race distance. I'm still at the beginning of my journey, so every training session and competition is an opportunity to improve.</p>
+        <div class="facts">
+          <div><span>COUNTRY</span><strong>Poland</strong></div>
+          <div><span>DISCIPLINES</span><strong>Sim racing / Karting</strong></div>
+          <div><span>CURRENT FOCUS</span><strong>Formula racing</strong></div>
         </div>
-
-        <div class="about-text">
-            <h3>Wiktor Tołopiło</h3>
-            <p>
-                I'm a 14-year-old racing enthusiast from Poland,
-                passionate about motorsport, competition and continuous
-                improvement.
-            </p>
-            <p>
-                My journey combines sim racing with real-world karting.
-                I focus on developing racecraft, consistency, speed
-                and a professional approach to racing.
-            </p>
-
-            <div class="stats">
-                <div><strong>14</strong><span>AGE</span></div>
-                <div><strong>88</strong><span>NUMBER</span></div>
-                <div><strong>PL</strong><span>COUNTRY</span></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section dark-section" id="career">
-    <p class="eyebrow">02 / RACING CAREER</p>
-    <h2 class="section-title">MY <span>JOURNEY</span></h2>
-
-    <div class="timeline">
-        <article class="timeline-item">
-            <span class="timeline-date">THE BEGINNING</span>
-            <h3>Discovering Motorsport</h3>
-            <p>
-                Developing an interest in racing, motorsport and
-                competitive driving.
-            </p>
+      </div>
+    </section>
+    <section class="section racing-section" id="racing">
+      <div class="section-top">
+        <div><p class="eyebrow">02 — EXPERIENCE</p><h2>Time spent<br><span>behind the wheel.</span></h2></div>
+        <p class="section-aside">A growing foundation in virtual and real-world motorsport.</p>
+      </div>
+      <div class="experience-grid">
+        <article class="experience-card">
+          <p class="card-index">01 / SIM RACING</p>
+          <h3>Formula & circuit racing</h3>
+          <p>Training in iRacing, currently focused on the Formula 1600. Experience also includes F1 titles, Assetto Corsa and Automobilista 2.</p>
+          <div class="tag-row"><span>iRacing</span><span>F1 series</span><span>Assetto Corsa</span><span>Automobilista 2</span></div>
         </article>
-
-        <article class="timeline-item">
-            <span class="timeline-date">SIM RACING</span>
-            <h3>Building Experience</h3>
-            <p>
-                Racing in F1 games and other simulators, gaining
-                experience in smaller online leagues and achieving
-                multiple podium finishes.
-            </p>
+        <article class="experience-card">
+          <p class="card-index">02 / KARTING</p>
+          <h3>Real-world driving</h3>
+          <p>Karting experience includes sessions at S8 and participation in karting league races. Working on awareness, control and racecraft.</p>
+          <img class="card-image" src="assets/images/karting.png" alt="Karting" onerror="this.style.display='none'">
         </article>
-
-        <article class="timeline-item">
-            <span class="timeline-date">REAL MOTORSPORT</span>
-            <h3>Karting</h3>
-            <p>
-                Developing real-world driving experience through
-                karting, including experience at S8.
-            </p>
+        <article class="experience-card">
+          <p class="card-index">03 / COMPETITION</p>
+          <h3>Learning through racing</h3>
+          <p>Podium finishes in smaller sim racing leagues and experience in online league events. No major championship results claimed at this stage.</p>
+          <p class="quiet-note">The focus is on building experience step by step.</p>
         </article>
-
-        <article class="timeline-item">
-            <span class="timeline-date">NEXT CHAPTER</span>
-            <h3>Taking the Next Step</h3>
-            <p>
-                Working towards more competitive racing opportunities
-                and further development.
-            </p>
-        </article>
-    </div>
-</section>
-
-<section class="section" id="results">
-    <p class="eyebrow">03 / RESULTS & EXPERIENCE</p>
-    <h2 class="section-title">RACE <span>EXPERIENCE</span></h2>
-
-    <div class="cards">
-        <article class="card">
-            <span class="card-icon">🏆</span>
-            <h3>Podium Finishes</h3>
-            <p>
-                Multiple podium finishes in smaller sim racing leagues.
-            </p>
-        </article>
-
-        <article class="card">
-            <span class="card-icon">🏁</span>
-            <h3>League Racing</h3>
-            <p>
-                Experience in online racing and competitive league events.
-            </p>
-        </article>
-
-        <article class="card">
-            <span class="card-icon">🎮</span>
-            <h3>Sim Racing</h3>
-            <p>
-                Experience across several racing simulators and F1 games.
-            </p>
-        </article>
-    </div>
-
-    <p class="small-note">
-        My experience is currently focused on smaller leagues and
-        independent racing events. Participation in major championships
-        remains a future ambition.
-    </p>
-</section>
-
-<section class="section dark-section" id="karting">
-    <p class="eyebrow">04 / REAL MOTORSPORT</p>
-    <h2 class="section-title">BEYOND THE <span>SIMULATOR</span></h2>
-
-    <div class="karting-grid">
-        <div>
-            <h3>Karting Experience</h3>
-            <p>
-                Sim racing is an important part of my development,
-                but I also value real-world motorsport experience.
-                Karting allows me to develop driving awareness,
-                control and racecraft outside the simulator.
-            </p>
-            <p>
-                My experience includes driving at S8 and participating
-                in karting league races.
-            </p>
-        </div>
-        <div class="karting-image">
-            <img src="assets/images/karting.png" alt="Karting photo"
-                 onerror="this.style.display='none'">
-            <div class="photo-placeholder">YOUR KARTING PHOTO HERE</div>
-        </div>
-    </div>
-</section>
-
-<section class="section" id="goals">
-    <p class="eyebrow">05 / DEVELOPMENT PLAN</p>
-    <h2 class="section-title">THE <span>VISION</span></h2>
-
-    <div class="goal-list">
-        <div class="goal">
-            <span>01</span>
-            <div>
-                <h3>F1 Sim Racing World Championship 2027</h3>
-                <p>Long-term competitive sim racing ambition.</p>
-            </div>
-        </div>
-
-        <div class="goal">
-            <span>02</span>
-            <div>
-                <h3>British Formula Ford</h3>
-                <p>A future real-world motorsport development goal.</p>
-            </div>
-        </div>
-
-        <div class="goal">
-            <span>03</span>
-            <div>
-                <h3>Formula 4</h3>
-                <p>Long-term ambition to progress towards formula racing.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section dark-section" id="equipment">
-    <p class="eyebrow">06 / SIM RACING</p>
-    <h2 class="section-title">MY <span>PLATFORM</span></h2>
-
-    <div class="cards">
-        <article class="card">
-            <h3>F1 Series</h3>
-            <p>F1 25, F1 24, F1 2019</p>
-        </article>
-        <article class="card">
-            <h3>Simulators</h3>
-            <p>Assetto Corsa, Automobilista 2, iRacing</p>
-        </article>
-        <article class="card">
-            <h3>Approach</h3>
-            <p>Practice, consistency, racecraft and continuous improvement.</p>
-        </article>
-    </div>
-</section>
-
-<section class="section partners">
-    <p class="eyebrow">07 / PARTNERSHIP</p>
-    <h2 class="section-title">LET'S BUILD <span>THE FUTURE</span></h2>
-    <p>
-        I'm interested in connecting with brands and people who support
-        the development of young motorsport talent.
-    </p>
-    <a href="#contact" class="button primary">BECOME A PARTNER</a>
-</section>
-
-<section class="section contact-section" id="contact">
-    <p class="eyebrow">08 / CONTACT</p>
-    <h2 class="section-title">GET IN <span>TOUCH</span></h2>
-
-    <div class="contact-links">
-        <a href="mailto:wiktortolopilokarting@gmail.com">
-            EMAIL — wiktortolopilokarting@gmail.com
-        </a>
-        <a href="https://www.youtube.com/@f188fanboy" target="_blank" rel="noopener">
-            YOUTUBE — @f188fanboy
-        </a>
-    </div>
-    <p class="small-note">
-        For formal sponsorship discussions, please contact me together
-        with my parent or legal guardian.
-    </p>
-</section>
-
-</main>
-
-<footer>
-    <a href="#home" class="logo">WIK<span>88</span></a>
-    <p>© <span id="year"></span> WIK #88 — RACING PORTFOLIO</p>
-    <p>POLAND 🇵🇱</p>
-</footer>
-
+      </div>
+    </section>
+    <section class="section goals-section" id="goals">
+      <div class="section-heading">
+        <p class="eyebrow">03 — NEXT STEPS</p>
+        <h2>Clear goals.<br><span>Steady progress.</span></h2>
+      </div>
+      <div class="goal-list">
+        <div class="goal-row"><span>01</span><div><h3>Polish Digital Motorsport Championship</h3><p>Targeting participation in a future season, subject to the official calendar and qualification requirements.</p></div><span class="goal-type">SIM RACING</span></div>
+        <div class="goal-row"><span>02</span><div><h3>Formula 4</h3><p>A longer-term development goal in formula racing.</p></div><span class="goal-type">MOTORSPORT</span></div>
+        <div class="goal-row"><span>03</span><div><h3>F1 Sim Racing</h3><p>Long-term ambition to progress towards top-level competition, including the F1 Sim Racing World Championship.</p></div><span class="goal-type">LONG TERM</span></div>
+      </div>
+    </section>
+    <section class="section approach-section">
+      <div class="approach-photo"><img src="assets/images/racing1.png" alt="Sim racing session" onerror="this.style.display='none'"></div>
+      <div class="approach-copy">
+        <p class="eyebrow">04 — APPROACH</p>
+        <h2>Progress is built<br><span>one session at a time.</span></h2>
+        <p>Practice, review, repeat. I value honest feedback, measurable improvement and learning from every race — regardless of the result.</p>
+        <a class="text-link" href="https://www.youtube.com/@f188fanboy" target="_blank" rel="noopener">Watch my videos <span>↗</span></a>
+      </div>
+    </section>
+    <section class="section contact-section" id="contact">
+      <p class="eyebrow">05 — CONTACT</p>
+      <h2>Let's talk<br><span>motorsport.</span></h2>
+      <p class="contact-intro">For racing, media or partnership enquiries, feel free to get in touch.</p>
+      <div class="contact-links">
+        <a href="mailto:wiktortolopilokarting@gmail.com"><span>Email</span><strong>wiktortolopilokarting@gmail.com ↗</strong></a>
+        <a href="https://www.youtube.com/@f188fanboy" target="_blank" rel="noopener"><span>YouTube</span><strong>@f188fanboy ↗</strong></a>
+      </div>
+      <p class="guardian-note">For formal sponsorship discussions, please contact me together with my parent or legal guardian.</p>
+    </section>
+  </main>
+  <footer>
+    <a class="wordmark" href="#home">Wiktor Tołopiło<span>.</span></a>
+    <p>© <span id="year"></span> · Driver portfolio · Poland</p>
+    <a href="#home" class="back-top">Back to top ↑</a>
+  </footer>
 </body>
 </html>
