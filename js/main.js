@@ -1,29 +1,21 @@
+const menuToggle = document.getElementById('menuToggle');
+const navigation = document.getElementById('navigation');
 
-const menuToggle = document.getElementById("menuToggle");
-const nav = document.getElementById("nav");
+if (menuToggle && navigation) {
+  menuToggle.addEventListener('click', () => {
+    const isOpen = navigation.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+    menuToggle.textContent = isOpen ? '×' : '☰';
+  });
 
-menuToggle.addEventListener("click", () => {
-    nav.classList.toggle("active");
-});
-
-document.querySelectorAll("#nav a").forEach(link => {
-    link.addEventListener("click", () => {
-        nav.classList.remove("active");
+  navigation.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      navigation.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.textContent = '☰';
     });
-});
+  });
+}
 
-window.addEventListener("scroll", () => {
-    const scrollTop = window.scrollY;
-    const documentHeight =
-        document.documentElement.scrollHeight - window.innerHeight;
-
-    const progress = document.getElementById("progress");
-
-    if (documentHeight > 0) {
-        progress.style.width =
-            (scrollTop / documentHeight) * 100 + "%";
-    }
-});
-
-document.getElementById("year").textContent =
-    new Date().getFullYear();
+const year = document.getElementById('year');
+if (year) year.textContent = new Date().getFullYear();
